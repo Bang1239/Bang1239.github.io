@@ -1,0 +1,115 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+.header-container {
+  position: relative;
+  padding: 20px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.header-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to right, #ff3366, #33ccff);
+  transform: skewY(-5deg);
+  z-index: -1;
+}
+
+.cv-container {
+  display: flex;
+  margin: 50px;
+}
+
+.cv-left {
+  width: 30%;
+  background-color: #f4f4f4;
+  padding: 50px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-picture {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#upload {
+  display: none;
+}
+
+#upload-label {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+#profile-img:hover {
+  opacity: 0.7;
+}
+
+.cv-right {
+  flex-grow: 1;
+  padding: 50px;
+  background-color: #fff;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.section-content {
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.section-content p:last-child {
+  margin-bottom: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 8px 15px;
+  border-radius: 20px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}

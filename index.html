@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Curriculum Vitae</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    body {
+      background-color: #222;
+    }
+
+    header {
+      text-align: center;
+      margin-top: 50px;
+      font-family: "Press Start 2P", cursive;
+      font-size: 15px;
+      color: #FFF;
+      text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+    }
+
+    .cv-container header h1 {
+      font-size: 60px;
+      margin-top: 20px;
+    }
+
+    .profile-picture {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      overflow: hidden;
+      border-radius: 50%;
+      margin: 0 auto;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+    }
+
+    .profile-picture img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .cv-left {
+      text-align: center;
+    }
+
+    .cv-left .section {
+      margin-bottom: 30px;
+    }
+
+    .cv-left .section-title {
+      margin-top: 20px;
+    }
+
+    .cv-right {
+      padding: 20px;
+    }
+
+    .section-title {
+      margin-bottom: 0;
+    }
+
+    .section-line {
+      margin-top: 0;
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <h1>CURICULLUM VITAE</h1>
+  </header>
+
+  <div class="cv-container">
+    <div class="cv-left">
+      <div class="profile-picture">
+        <input type="file" id="upload" accept="image/*" />
+        <label for="upload" id="upload-label">
+          <img id="profile-img" src="default-profile.jpg" alt="Profile Picture">
+        </label>
+      </div>
+
+      <div class="section">
+        <h2 class="section-title">BANG SURYA JAYA</h2>
+        <h2 class="section-title">Contact</h2>
+        <hr class="section-line">
+        <div class="section-content">
+          <p>Email: example@example.com</p>
+          <p>Phone: 123-456-7890</p>
+          <p>Address: 123 Street, City, Country</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2 class="section-title">Interest</h2>
+        <hr class="section-line">
+        <div class="section-content">
+          <ul>
+            <li><i class="fas fa-laptop-code icon"></i>Web Development</li>
+            <li><i class="fas fa-camera icon"></i>Photography</li>
+            <li><i class="fas fa-plane icon"></i>Traveling</li>
+            <li><i class="fas fa-book icon"></i>Reading</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2 class="section-title">Connect</h2>
+        <hr class="section-line">
+        <div class="section-content">
+          <ul>
+            <li><i class="fas fa-globe icon"></i><a href="https://example.com">Website</a></li>
+            <li><i class="fab fa-linkedin icon"></i><a href="https://linkedin.com/in/your-profile">LinkedIn</a></li>
+            <li><i class="fab fa-github icon"></i><a href="https://github.com/your-profile">GitHub</a></li>
+            <li><i class="fab fa-twitter icon"></i><a href="https://twitter.com/your-profile">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="cv-right">
+      <div class="section">
+        <h2 class="section-title">Profile</h2>
+        <hr class="section-line">
+        <div class="section-content">
+          <p>Seorang penjelajah digital dengan obsesi pada keajaiban dunia maya. Terjebak di antara kenyataan dan fantasi, mencari cara untuk menghubungkan keduanya. Terinspirasi oleh glitch art dan musik elektronik retro.</p>
+          <p>Ketika ruang kelas menjadi terlalu sempit, dunia menjadi guru terbaik. Biarkan rasa ingin tahu kita membawa kita ke tempat-tempat tak terduga.</p>
+          <p>Dunia maya adalah kanvasku, dan aku pelukis digital. Biarlah glitch-gitch ini menciptakan keajaiban yang tak terduga.<p>
+        </div>
+      </div>
+      <div class="section">
+        <h2 class="section-title">Education</h2>
+        <hr class="section-line">
+        <div class="section-content">
+          <p>Seorang pemberontak pendidikan dengan pendekatan unik terhadap pembelajaran.</p>
+          <p>Tidak terikat oleh batasan tradisional, Membangun pengetahuannya melalui eksplorasi mandiri dan pengalaman praktis.</p>
+          <p>Menjadikan dunia sebagai kelasnya dan setiap momen sebagai peluang untuk belajar.</p>
+        </div>
+      </div>
+      
+      <div class="section">
+        <h2 class="section-title">Work Experience</h2>
+        <hr class="section-line">
+        <div class="section-content">
+          <p>Web Developer</p>
+          <p>ABC Company, City</p>
+          <p>2018 - Present</p>
+          <p>Menyelinap di dalam kode, berjalan di jalur langit, menghidupkan pixel-pixel tak terduga. Exploring the digital abyss, one glitch at a time. Serius dengan teknologi, tidak serius dengan hidup.</p>
+        </div>
+      </div>
+      
+      <div class="section">
+        <h2 class="section-title">Skills</h2>
+        <hr class="section-line">
+        <div class="section-content">
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Node.js</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const uploadInput = document.getElementById('upload');
+    const profileImg = document.getElementById('profile-img');
+
+    uploadInput.addEventListener('change', function(e) {
+      const file = e.target.files[0];
+      const reader = new FileReader();
+
+      reader.onload = function(e) {
+        profileImg.src = e.target.result;
+      };
+
+      reader.readAsDataURL(file);
+    });
+  </script>
+</body>
+</html>
